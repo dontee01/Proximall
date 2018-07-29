@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProxiMall</string>
+    <string name="action_search">Search</string>
+    <string name="action_log_in">log In</string>
+    <string name="action_log_out">log Out</string>
+    <string name="action_cart">My Cart</string>
+    <string name="action_wishlist">My Wishlist</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/container"
+    >
+
+
+    <!--<include-->
+        <!--android:id="@+id/loadItemsLayout_listView"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--layout="@layout/title_bar"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+
+
+
+    <!--<include-->
+        <!--android:id="@+id/internetLayout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--layout="@layout/internet_state_page"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+
+
+            <ProgressBar
+                android:id="@+id/more_progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="53dp"
+                android:layout_gravity="center_horizontal" />
+
+
+
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        android:numColumns="2"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:padding="10dp"
+        ></GridView>
+
+    <!--<ListView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:id="@+id/listView"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:divider="#e5e5e5"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:dividerHeight="10dp"-->
+        <!--android:layout_above="@+id/Ask_for_Advice" />-->
+
+
+
+</LinearLayout>

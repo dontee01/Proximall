@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:id="@+id/locationSwitchLayout"
+        android:layout_toRightOf="@+id/searchTextView"
+        android:layout_toEndOf="@+id/searchTextView">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#acffffff"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:text="Please,tap the switch to Switch on your Location Manager"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="169dp"
+            android:id="@+id/textView3" />
+
+        <Switch
+            android:id="@+id/locationSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/searchTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#75ecc08d"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:text="Please wait while we search the stores around you..."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="#75ecc08d"
+        app:rb_radius="32dp"
+        android:visibility="gone"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+        <!--<ImageView-->
+            <!--android:layout_width="64dp"-->
+            <!--android:layout_height="64dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/centerImage"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/mall3"/>-->
+    </com.skyfishjy.library.RippleBackground>
+
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:id="@+id/locationManagerProgressBar"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

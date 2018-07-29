@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="#f5f5f5"
+
+
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:padding="5dp"
+            android:background="#A0ffffff"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Shoprite"
+                    android:textSize="16sp"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    android:textColor="#2e095a"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/imageView5"
+                    android:layout_alignLeft="@+id/imageView5"
+                    android:layout_alignStart="@+id/imageView5"
+                    android:maxLength="20" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="2km away"
+                        android:textColor="#E91E63"
+                        android:textSize="10sp"
+                        android:layout_weight="0.6"
+                        android:typeface="sans"
+                        android:maxLength="9"
+                        android:id="@+id/distance"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignLeft="@+id/textView"
+                        android:layout_alignStart="@+id/textView" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                        <!--android:text="nov 4"-->
+                        <!--android:id="@+id/date_posted"-->
+                        <!--android:textColor="#424242"-->
+                        <!--android:textSize="10sp"-->
+                        <!--android:maxLength="11"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:typeface="serif"-->
+                        <!--android:textStyle="italic"-->
+                        <!--android:layout_weight="0.4"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_alignLeft="@+id/textView"-->
+                        <!--android:layout_alignStart="@+id/textView" />-->
+
+                </LinearLayout>
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="#12,000"-->
+                <!--android:id="@+id/goods_price"-->
+                <!--android:textColor="#E91E63"-->
+                <!--android:textSize="10sp"-->
+                <!--android:typeface="sans"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignLeft="@+id/textView"-->
+                <!--android:layout_alignStart="@+id/textView" />-->
+            </LinearLayout>
+
+            <!--<Button-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_weight=".2"-->
+            <!--android:text="BUY"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@drawable/shop_item_use"-->
+            <!--android:textSize="10sp"-->
+            <!--/>-->
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

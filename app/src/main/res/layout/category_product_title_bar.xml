@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#2e095a"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/backButton"
+            android:src="@drawable/mall4"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bag"
+            android:textColor="#b9cde8"
+            android:layout_gravity="center_vertical"
+            android:textSize="13dp"
+            android:id="@+id/title"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:typeface="sans"/>
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#2e095a"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/viewSwitch"
+            android:src="@drawable/mall4"/>
+    </LinearLayout>
+
+</LinearLayout>

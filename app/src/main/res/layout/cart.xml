@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/cartProgressBar"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:divider="#fff"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:id="@+id/cartListView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:id="@+id/checkOutLayout"
+        android:layout_weight="0.4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#140,500"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:id="@+id/shareButton"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="0.5"
+            android:typeface="serif"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            android:textSize="14dp"
+            android:id="@+id/checkOutButton"
+            android:background="@color/colorPrimary"
+            android:textColor="#d3eef5"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+
+    </LinearLayout>
+</LinearLayout>

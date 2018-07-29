@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <item
+        android:id="@+id/logIn"
+        android:title="@string/action_log_in"
+        android:orderInCategory="100"
+        android:icon="@drawable/advert"
+        yourapp:showAsAction="never" />
+
+    <item
+        android:id="@+id/WishList"
+        android:title="@string/action_wishlist"
+        android:orderInCategory="100"
+        android:icon="@drawable/advert"
+        yourapp:showAsAction="never" />
+    <item
+        android:id="@+id/logOut"
+        android:title="@string/action_log_out"
+        android:orderInCategory="100"
+        android:icon="@drawable/advert"
+        yourapp:showAsAction="never" />
+
+</menu>

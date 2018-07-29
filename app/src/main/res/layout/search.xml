@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#e0e0e0"
+    android:layout_height="match_parent">
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:imeOptions="actionSearch"
+        android:hint="Hostel Name"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textColor="#F5F5F5"
+        android:background="#fff"
+        android:paddingBottom="5dp"
+        android:privateImeOptions="@string/action_search"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="5dp"
+        android:typeface="sans"
+        android:id="@+id/SearchAutoComplete"
+        android:drawablePadding="4dp"
+
+        >
+        <requestFocus/>
+    </AutoCompleteTextView>
+    <!--<SearchView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:iconifiedByDefault="false"-->
+        <!--android:background="#fff"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:id="@+id/searchView"-->
+        <!--android:queryHint="Search Here"></SearchView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/advert"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/searchEdittext"
+            android:layout_marginRight="10dp"
+            android:hint="I am looking for..."
+            android:textColorHint="#cb30221b"
+            android:typeface="sans"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_grey_backgrounded"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="men cloth"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="wowmen cloth"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="men bag"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="wowmen bag"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="men shoe"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="wowmen shoe"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
